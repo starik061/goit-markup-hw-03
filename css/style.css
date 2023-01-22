@@ -1,3 +1,6 @@
+div, section, p {
+    outline: 1px solid greenyellow;
+}
 :root {
     --main-text-color: #434455;
     --main-title-color: #2E2F42;
@@ -22,10 +25,35 @@ a {
 }
 
 ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style: none;
 }
 
+h1, h2, h3, h4, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+img {
+    display: block;
+}
+.container {
+    margin: 0 auto;
+    width: 1158px;
+    padding: 0 15px;
+}
 /* Header styles */
+.main-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -65,21 +93,28 @@ ul {
     font-style: normal;
 }
 /* Hero section  */
-.hero,
-footer {
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    text-align: center;
     background-color: var(--main-title-color);
 }
+
+
 .main-title {
+    display: block;
+    max-width: 496px;
+    margin: 0 auto 48px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-background-color);
 }
 
 .order-service {
+    padding: 16px 32px;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -117,6 +152,7 @@ footer {
 .benefits-title,
 .team-member-title,
 .example-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -124,9 +160,13 @@ footer {
 }
 
 /* "What are we doing" section  */
+.doing-section {
+    padding-top: 0;
+}
 
 .doing-title,
 .team-title {
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -141,8 +181,21 @@ footer {
     background-color: var(--secondary-background-color);
 }
 
+.team-member-card {
+    padding-bottom: 32px;
+    text-align: center;
+    background-color: var(--main-background-color);
+}
 /* Footer  */
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--main-title-color);
+}
+
 .footer-logo {
+    margin-bottom: 16px;
     line-height: 1.17;
     color: var(--secondary-background-color);
 }
