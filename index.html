@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main page</title>
-    <link rel="preconnect" href="<https://fonts.gstatic.com>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -18,17 +19,17 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <nav>
+      <div class="container flex-container">
+        <nav class="flex-container">
           <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-          <ul>
+          <ul class="menu-list flex-container">
             <li><a class="nav-title current" href="./index.html">Studio</a></li>
             <li><a class="nav-title" href="./portfolio.html">Portfolio</a></li>
             <li><a class="nav-title" href="./contacts.html">Contacts</a></li>
           </ul>
         </nav>
         <address class="address">
-          <ul>
+          <ul class="flex-container">
             <li>
               <a class="contacts" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -51,29 +52,29 @@
       <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Benefits</h2>
-          <ul>
-            <li>
+          <ul class="flex-container">
+            <li class="benefits-card">
               <h3 class="benefits-title">Strategy</h3>
               <p>
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="benefits-card">
               <h3 class="benefits-title">Punctuality</h3>
               <p>
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="benefits-card">
               <h3 class="benefits-title">Diligence</h3>
               <p>
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="benefits-card">
               <h3 class="benefits-title">Technologies</h3>
               <p>
                 Design practice focused on digital experiences. We bring forth a
@@ -86,22 +87,22 @@
       <section class="doing-section">
         <div class="container">
           <h2 class="doing-title">What are we doing</h2>
-          <ul>
-            <li>
+          <ul class="flex-container">
+            <li class="doing-card">
               <img
                 src="./images/img_1.jpg"
                 alt="Laptop solutions"
                 width="360"
               />
             </li>
-            <li>
+            <li class="doing-card">
               <img
                 src="./images/img_2.jpg"
                 alt="Mobile solutions"
                 width="360"
               />
             </li>
-            <li>
+            <li class="doing-card">
               <img
                 src="./images/img_3.jpg"
                 alt="Combine solutions"
@@ -114,7 +115,7 @@
       <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
-          <ul>
+          <ul class="flex-container">
             <li class="team-member-card">
               <img
                 src="./images/team_1.jpg"
